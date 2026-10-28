@@ -1,0 +1,93 @@
+:root {
+    --color1: 59, 47, 47;
+    --color2: 90, 68, 68;
+    --color3: 255, 96, 64;
+    --color4: 250, 250, 250;
+    --color5: 255, 255, 255;
+    --fuentePrincipal: "Poppins", sans-serif;
+    --fuenteSecundaria: "Lato", sans-serif;
+}
+
+html {
+    background-color: rgb(var(--color2));
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+}
+
+.navbar {
+    background-color: rgba(var(--color4), 0.63);
+    padding: 20px;
+    border-radius: 23px;
+    font-size: 13px;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.navbar a {
+    color: rgb(var(--color5));
+    text-decoration: none;
+}
+
+.navbar a:visited {
+    color: rgb(var(--color3));
+}
+
+.nav-links {
+    color: var(--color2);
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: rgb(var(--color4));
+    text-decoration: none;
+}
+
+.nav-links a:visited {
+    color: rgb(var(--color4));
+}
+
+.navbar a:hover {
+    color: rgb(var(--color3));
+}
+
+.btn-login {
+    border-radius: 17px;
+    padding: 15px;
+    margin-right:-12px ;
+    background-color: rgba(var(--color3), 0.45);
+}
+.btn-login a:hover {
+    color: rgb(var(--color5));
+}
+.nav-cta a:visited{
+    color: rgb(var(--color5));
+
+}
+/*mobilefirstt */
+.navbar {
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/*TABLET Y ESCRITORIO*/
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
